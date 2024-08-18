@@ -1,0 +1,185 @@
+
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          background:
+          url("bob.jpg") no-repeat center center / cover ; 
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        /* Set a style for all buttons */
+        button {
+          background-color:#0d1021;
+          color: white;
+          padding: 8px 14px;
+          margin: 7px 0;
+          border: none;
+          cursor: pointer;
+          opacity: 0.9;
+        }
+
+        button:hover {
+          opacity: 1;
+        }
+        .button-style{
+          padding: 8px 16px;
+        }
+
+        form {
+          margin: 20px auto;
+          text-align: center;
+          font-weight: 600;
+          padding: 8px 14px;
+          width: 50%;
+        }
+
+        /* Full-width input fields */
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0;
+          border: none;
+          background: #ddd;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="email"]:focus {
+          background-color: dimgrey;
+          outline: none;
+        }
+
+        input[type="date"] {
+          width: 100%;
+          padding: 10px;
+          background-color: #ddd;
+          border: none;
+        }
+
+        /* Set style for blood group dropdown */
+        #blood-group {
+          width: 100%;
+          padding: 14px;
+          margin: 5px 0;
+          font-size: medium;
+          background-color: #ddd;
+          border: none;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        .form-container {
+          margin-bottom: 20px;
+        }
+
+        .table-container {
+          width: 100%;
+        }
+
+        #user-table {
+          width: 100%;
+          border-collapse:separate;
+        }
+
+        #user-table th,
+        #user-table td {
+          align-items: center;
+          padding: 8px;
+          border-bottom: 1px solid #ddd;
+        }
+
+        #user-table th {
+          background-color: cadetblue;
+        }
+
+        .create-button,
+        .edit-button,
+        .delete-button,
+        .reset-button {
+          cursor: pointer;
+          margin-right: 5px;
+        }
+
+        .success-message {
+          color: green;
+          margin-bottom: 10px;
+        }
+
+        .error-message {
+          color: red;
+          margin-bottom: 10px;
+        }
+      
+        body {
+          transition: background-color 0.3s, color 0.3s;
+      }
+
+      .dark-mode {
+          background-color: #0d1021;
+          color: #ffffff;
+      }
+
+      .switch {
+          position: relative;
+          display: inline-block;
+          width: 60px;
+          height: 34px;
+      }
+
+      .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+      }
+
+      .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color:transparent;
+          transition: 0.4s;
+      }
+
+      .slider:before {
+          position: absolute;
+          content: "";
+          height: 26px;
+          width: 26px;
+          left: 4px;
+          bottom: 4px;
+          background-color: #fff;
+          transition: 0.4s;
+      }
+
+      input:checked+.slider {
+          background-color: #2196F3;
+      }
+
+      input:focus+.slider {
+          box-shadow: 0 0 1px #2196F3;
+      }
+
+      input:checked+.slider:before {
+          transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+          border-radius: 36px;
+      }
+
+      .slider.round:before {
+          border-radius: 50%;
+      }

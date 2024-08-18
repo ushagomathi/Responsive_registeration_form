@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <center>
+    <fieldset style="width:60%">
+      <legend>
+        <h1>Registration Form</h1>
+      </legend>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="user.css">
+
+</head>
+
+<body>
+  <div class="form-container">
+    <form id="user-form" style="text-align:left">
+      <div>
+        <label for="username">Username:</label>
+        <input onkeydown="return /[a-z]/i.test(event.key)" type="text" id="username" placeholder="Enter Username"
+          minlength="2" maxlength="20" autocomplete="off">
+      </div>
+      <br>
+      <div>
+        <label for="email" style="width: 40%;">Email:</label>
+        <input type="email" id="email" placeholder="Enter Email" pattern=".+@gmail.com" size="30" autocomplete="off">
+      </div>
+      <br>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password" minlength="8" maxlength="8"
+          autocomplete="off">
+      </div>
+      <br>
+      <div>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" minlength="8" maxlength="8" placeholder="Confirm password"
+          autocomplete="off">
+      </div>
+      <br>
+      <div>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+      </div>
+      <br>
+      <div>
+        <label for="birth-date">Date of Birth:</label>
+        <input type="date" id="birth-date" max="2030-12-31">
+      </div>
+      <br>
+      <div>
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" id="hobby1" name="hobbies" value="Reading">
+        <label for="hobby1">Reading</label>
+        <input type="checkbox" id="hobby2" name="hobbies" value="Music">
+        <label for="hobby2">Music</label>
+        <input type="checkbox" id="hobby3" name="hobbies" value="Sports">
+        <label for="hobby3">Sports</label>
+      </div>
+
+      <br>
+      <div>
+        <label for="blood-group">Blood Group:</label>
+        <select id="blood-group">
+          <option value="" selected hidden>-- select the option--</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+      </div>
+      <div style="text-align:center">
+        <button type="button" id="reset-button">Reset</button>
+        <input type="submit" id="create-button" class="button-style" value="Create">
+        <button type="button" id="update-button" style="display: none;">Update</button>
+      </div>
+      </fieldset>
+    </form>
+  </div>
+  </center>
+  <br>
+  <div class="table-container">
+    <table id="user-table">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Gender</th>
+          <th>Hobbies</th>
+          <th>Date of Birth</th>
+          <th>Blood Group</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="user-table-body"></tbody>
+    </table>
+  </div>
+  <script type="text/javascript" src="user.js"></script>
+
+
+</body>
+
+</html>
